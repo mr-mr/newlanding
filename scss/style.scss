@@ -21,7 +21,7 @@ body {
 	font-family:arial;
 	padding:15px;
 	font-size:14px;
-	background:#e5e5e5;
+	background:#f3f3f3;
 
 	@media(max-width:$small){
 		font-size:18px;
@@ -39,45 +39,59 @@ li{
 
 #container{
 	margin:0 auto;
-	width:70%;
-	max-width:400px;
-	@media(min-width:$small){
+	width:100%;
+	max-width:800px;
+	@media(min-width:$medium){
 		width:100%;
 	}
 }
 
 .left, .right{
 	padding:10px;
-	@media(max-width:$medium){
-		clear:both;
+	@media(max-width:$medium-large){
 		padding:0;
 	}
 }
 
 .left{
 	width:380px;
-	//float:left;
-	//background:grey;
+	float:left;
+	@media(max-width:$medium-large){
+		width:354px;
+	}
+	@media(max-width:$medium){
+		clear:both;
+		width:100%;
+	}
 }
 
 .right{
 	width:380px;
-	//float:right;
-	//background:orange;
+	float:right;
+	@media(max-width:$medium-large){
+		width:354px;
+	}
+	@media(max-width:$medium){
+		clear:both;
+		width:100%;
+	}
 }
 
 #logo{
 	background: url('../img/logo_2014_1.svg') no-repeat center;
 	background-size:100% auto;
-	width:100%;
+	width:90%;
 	height:400px;
 	padding-bottom:70px;
 	margin: -140px 0 0 0;
-
+	@media(max-width:$medium-large){
+		
+	}
 	@media(max-width:$small){
 		padding-bottom:20px;
+		margin-bottom:-40px;
+		width:100%;
 	}
-
 }
 .updated{
 	background:grey; 
